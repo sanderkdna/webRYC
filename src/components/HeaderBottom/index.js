@@ -38,7 +38,12 @@ const HeaderBottom = props => {
                                         <li><NavLink exact to='/home-three'>Home Three</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink exact to='/about'>About</NavLink></li>
+                                <li><NavLink exact to='/about'>Organización</NavLink>
+                                    <ul className="subMenu">
+                                        <li><NavLink exact to='/about'>Sobre Nosotros</NavLink></li>
+                                        <li><NavLink exact to='/practice-details'>Practice areas single</NavLink></li>
+                                    </ul>
+                                </li>
                                 <li><NavLink exact to='/practice'>Practice</NavLink>
                                     <ul className="subMenu">
                                         <li><NavLink exact to='/practice'>Practice areas</NavLink></li>
