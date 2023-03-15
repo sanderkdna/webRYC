@@ -13,7 +13,7 @@ import Tags from '../../../components/Tags'
 import Instagram from '../../../components/Instagram'
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
-import './style.scss'
+import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },

@@ -1,0 +1,20 @@
+.singleArea.singlePortfolioArea {
+    padding-bottom: 0;
+}
+.singleArea.singlePortfolioArea .singleContentArea .singleContentWrap p:last-child {
+    margin-bottom: 0;
+}
+.portfolioArea.portfolioAreaStyleFour {
+    padding-bottom: 70px;
+    padding-top: 90px;
+}
+.portfolioArea.portfolioAreaStyleFour .sectionTitle {
+    text-align: left;
+}
+.portfolioArea.portfolioAreaStyleFour .sectionTitle span {
+    display: none;
+}
+.portfolioArea.portfolioAreaStyleFour .sectionTitle h2::before {
+    left: 0;
+    transform: translateX(0);
+}

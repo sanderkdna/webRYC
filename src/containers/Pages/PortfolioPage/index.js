@@ -14,7 +14,7 @@ import portfolio3 from '../../../images/studies/3.jpg'
 import portfolio4 from '../../../images/studies/4.jpg'
 import portfolio5 from '../../../images/studies/5.jpg'
 
-import './style.scss'
+import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },

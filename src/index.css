@@ -6,13 +6,19 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     color: #333;
+}
     @media (max-width:1200px) {
-        font-size: 14px;
+        body{
+            font-size: 14px;
+
+        }
     }
     p {
         color: #666;
-        line-height: 28px;
-        @media (max-width:1200px) {
+        line-height: 28px; 
+    }
+    @media (max-width:1200px) {
+        p {
             line-height: 26px;
         }
     }
@@ -37,9 +43,9 @@ body {
         -o-transition: all 0.2s;
         -ms-transition: all 0.2s;
         transition: all 0.2s;
-        &:hover{
-            text-decoration: none;
-        }
+    }
+    a:hover{
+        text-decoration: none;
     }
     img {
         max-width: 100%;
@@ -49,9 +55,8 @@ body {
     a:focus {
         outline: none;
     }
-    .btnStyle{
-        a,
-        button{
+    
+    .btnStyle a, .btnStyle button{
             background-color: #c0b596;
             font-size: 16px;
             font-weight: 600;
@@ -61,51 +66,55 @@ body {
             text-transform: capitalize;
             display: inline-block;
             margin-top: 3px;
-            @media (max-width:1200px) {
+        }
+        @media (max-width:1200px) {
+            .btnStyle a, .btnStyle button{
                 font-size: 14px;
                 padding: 10px 35px;
             }
-            @media (max-width:768px) {
+        }
+        @media (max-width:768px) {
+            .btnStyle a, .btnStyle button{
                 padding: 10px 13px;
             }
-            &:hover{
-                background: #d4c291;
+        }
+        .btnStyle a:hover, .btnStyle button:hover{
+            background: #d4c291;
+        }
+        .btnStyle3 a{
+                position: relative;
+        }
+        .btnStyle3 a:before{
+            content: "";
+            position: absolute;
+            right: -60px;
+            top: 50%;
+            width: 85px;
+            height: 2px;
+            background: #fff;
+            bottom: 0;
+            transform: translateY(-50%);
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+        }
+        @media (max-width:1200px) {
+            .btnStyle3 a{
+                width: 60px;
+                right: -40px;
             }
         }
-        &.btnStyle3{
-            a{
-                position: relative;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    right: -60px;
-                    top: 50%;
-                    width: 85px;
-                    height: 2px;
-                    background: #fff;
-                    bottom: 0;
-                    transform: translateY(-50%);
-                    transition: all .3s;
-                    -webkit-transition: all .3s;
-                    -moz-transition: all .3s;
-                    @media (max-width:1200px) {
-                        width: 60px;
-                        right: -40px;
-                    }
-                }
-                &:hover{
+        /* .btnStyle3 a:hover{
                     &::before{
                         right: -95px;
                     }
                 }
             }
-        }
-    }
+        } */
     .bgFFF{
         background: #fff!important;
     }
     .pt100{
         padding-top: 100px!important;
     }
-}
 

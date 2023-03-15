@@ -1,0 +1,19 @@
+.singleArea {
+    padding: 100px 0px;
+}
+.singleArea .pr25 {
+    padding-right: 25px;
+}
+@media (max-width: 768px) {
+    .singleArea .pr25 {
+        padding-right: 0;
+   }
+}
+.singleArea .pl25 {
+    padding-left: 25px;
+}
+@media (max-width: 768px) {
+    .singleArea .pl25 {
+        padding-left: 0;
+   }
+}

@@ -13,7 +13,7 @@ import breadcumb from '../../../images/breadcumb/1.jpg'
 import banner from '../../../images/practice/2.jpg'
 import single from '../../../images/practice/3.jpg'
 
-import './style.scss'
+import './style.css'
 
 
 const breadcumbMenu = [

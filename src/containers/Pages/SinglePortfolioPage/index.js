@@ -16,7 +16,7 @@ import single from '../../../images/practice/3.jpg'
 import portfolio1 from '../../../images/studies/1.jpg'
 import portfolio2 from '../../../images/studies/2.jpg'
 import portfolio3 from '../../../images/studies/3.jpg'
-import './style.scss'
+import './style.css'
 
 
 const breadcumbMenu = [

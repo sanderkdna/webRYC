@@ -8,7 +8,7 @@ import FooterArea from '../../../components/FooterArea'
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
 
-import './style.scss'
+import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
