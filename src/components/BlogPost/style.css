@@ -1,0 +1,82 @@
+.blogPostWrapper {
+    margin-bottom: 60px;
+}
+.blogPostWrapper .blogPostImg img {
+    width: 100%;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta li {
+    color: #666;
+}
+@media (max-width: 375px) {
+    .blogPostWrapper .blogPostContent ul.blogPostMeta li {
+        font-size: 12px;
+   }
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta li::before {
+    content: "|";
+    padding: 0px 15px;
+    color: #ccc;
+}
+@media (max-width: 375px) {
+    .blogPostWrapper .blogPostContent ul.blogPostMeta li::before {
+        padding: 0px 5px;
+   }
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta li:first-child::before {
+    display: none;
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta li:nth-child(2)::before {
+    display: none;
+}
+.blogPostWrapper .blogPostContent ul.blogPostMeta li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+@media (max-width: 375px) {
+    .blogPostWrapper .blogPostContent ul.blogPostMeta li img {
+        margin-right: 10px;
+   }
+}
+.blogPostWrapper .blogPostContent h3 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+@media (max-width: 375px) {
+    .blogPostWrapper .blogPostContent h3 {
+        font-size: 30px;
+   }
+}
+.blogPostWrapper .blogPostContent h3 a {
+    color: #282e3f;
+}
+.blogPostWrapper .blogPostContent p {
+    line-height: 30px;
+}
+.blogPostWrapper .blogPostContent a.readmore {
+    display: inline-block;
+    font-size: 16px;
+    color: #c0b596;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.blogPostWrapper:hover .blogPostImg img {
+    width: 100%;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    filter: grayscale(50%);
+}

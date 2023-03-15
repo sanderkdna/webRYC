@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './style.css'
 
 import img1 from '../../images/instragram/1.jpg'
 import img2 from '../../images/instragram/2.jpg'

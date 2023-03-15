@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './style.css'
 import post1 from '../../images/case-studies-details/1.jpg'
 import post2 from '../../images/case-studies-details/2.jpg'
 import post3 from '../../images/case-studies-details/3.jpg'

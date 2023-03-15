@@ -1,0 +1,287 @@
+.headerArea .headerBottomArea {
+    background: #272c3f;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.headerArea .headerBottomArea .logo {
+    padding: 10px 0px;
+}
+@media (max-width: 800px) {
+    .headerArea .headerBottomArea .logo {
+        padding: 15px 0;
+        margin-top: 0;
+   }
+}
+@media (max-width: 1024px) {
+    .headerArea .headerBottomArea .logo img {
+        height: unset;
+   }
+}
+@media (max-width: 768px) {
+    .headerArea .headerBottomArea .logo img {
+        height: 50px;
+   }
+}
+@media (max-width: 767px) {
+    .headerArea .headerBottomArea .logo img {
+        height: 40px;
+   }
+}
+@media (max-width: 400px) {
+    .headerArea .headerBottomArea .logo img {
+        height: unset;
+   }
+}
+.headerArea .headerBottomArea .mainMenuWrap {
+    text-align: right;
+}
+.headerArea .headerBottomArea .mainMenuWrap li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 18px;
+}
+.headerArea .headerBottomArea .mainMenuWrap li:first-child {
+    padding-left: 0;
+}
+.headerArea .headerBottomArea .mainMenuWrap li:last-child {
+    padding-right: 0;
+}
+@media (max-width: 1200px) {
+    .headerArea .headerBottomArea .mainMenuWrap li {
+        padding: 0px 15px;
+   }
+}
+.headerArea .headerBottomArea .mainMenuWrap li a {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0;
+    padding: 35px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.headerArea .headerBottomArea .mainMenuWrap li a i {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .headerArea .headerBottomArea .mainMenuWrap li a {
+        font-size: 14px;
+   }
+}
+.headerArea .headerBottomArea .mainMenuWrap li a.active {
+    color: #c0b596;
+}
+.headerArea .headerBottomArea .mainMenuWrap li:hover a, .headerArea .headerBottomArea .mainMenuWrap li:hover span {
+    color: #c0b596;
+}
+.headerArea .headerBottomArea .mainMenuWrap li ul.subMenu {
+    position: absolute;
+    left: 0;
+    top: 92px;
+    z-index: 999;
+    width: 226px;
+    padding: 5px 12px;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+    transform-origin: top;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-transform: capitalize;
+}
+.headerArea .headerBottomArea .mainMenuWrap li ul.subMenu li {
+    display: block;
+    padding: 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.headerArea .headerBottomArea .mainMenuWrap li ul.subMenu li:last-child {
+    border-bottom: none;
+}
+.headerArea .headerBottomArea .mainMenuWrap li ul.subMenu li a {
+    font-size: 1rem;
+    color: #06163a;
+    display: block;
+    padding: 12px 15px;
+    text-transform: capitalize;
+}
+.headerArea .headerBottomArea .mainMenuWrap li ul.subMenu li a:hover, .headerArea .headerBottomArea .mainMenuWrap li ul.subMenu li a.active {
+    color: #c0b596;
+}
+.headerArea .headerBottomArea .mainMenuWrap li:hover ul.subMenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+}
+@media (max-width: 800px) {
+    .headerArea .headerBottomArea .responsiveWrapper {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: #151a30;
+        transition: all 0.3s;
+        z-index: 99;
+        padding: 20px;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper.active {
+        display: block;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap {
+        text-align: left;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li {
+        display: block;
+        padding: 0;
+        margin-bottom: 15px;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li a, .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li span {
+        padding: 0px;
+        position: relative;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li a i, .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li span i {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li ul.subMenu {
+        top: 25px;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li ul.subMenu li {
+        margin-bottom: 0;
+   }
+    .headerArea .headerBottomArea .responsiveWrapper .mainMenuWrap li ul.subMenu li a {
+        padding: 10px 0px;
+   }
+}
+.headerArea .headerBottomArea .searchMenuWrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap i {
+    color: #fff;
+    cursor: pointer;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap i:hover {
+    color: #c0b596;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform {
+    position: absolute;
+    right: 0;
+    top: 150%;
+    width: 263px;
+    background: #fff;
+    z-index: 999;
+    padding: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    text-align: center;
+}
+@media (max-width: 380px) {
+    .headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform {
+        right: -25px;
+   }
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform.active {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform form {
+    position: relative;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform form input {
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    padding: 0 40px 0 10px;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #272c3f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .searchWrap .searchform form button:hover {
+    background: #1d233c;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .responsiveTrigger {
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 800px) {
+    .headerArea .headerBottomArea .searchMenuWrapper .responsiveTrigger {
+        display: block;
+   }
+}
+.headerArea .headerBottomArea .searchMenuWrapper .responsiveTrigger span {
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin-bottom: 3px;
+}
+.headerArea .headerBottomArea .searchMenuWrapper .responsiveTrigger span:last-child {
+    margin-bottom: 0;
+}
+.headerArea .headerBottomArea.headerBottomAreaStyelTwo {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: rgba(255, 255, 255, .05);
+    border-bottom: 1px solid rgba(255, 255, 255, .07);
+}
+@media (max-width: 800px) {
+    .headerArea .headerBottomArea.headerBottomAreaStyelTwo {
+        position: relative;
+        background: #272c3f;
+   }
+}
+.headerArea.headerAreaStyleThree .headerBottomArea {
+    background: transparent;
+}
+@media (max-width: 768px) {
+    .headerArea.headerAreaStyleThree .headerBottomArea {
+        background: #272c3f;
+   }
+}
+.headerArea.headerAreaStyleThree .headerBottomArea .headerBottomMainWrapper {
+    background: #272c3f;
+    padding: 0px 15px;
+}
+@media (max-width: 768px) {
+    .headerArea.headerAreaStyleThree .headerBottomArea .headerBottomMainWrapper {
+        padding: 0;
+   }
+}

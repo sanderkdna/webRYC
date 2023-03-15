@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './style.scss'
+import './style.css'
 const NewsLetter = ({ className }) => {
     const [email, setEmail] = useState('')
     const submitHandler = event =>{

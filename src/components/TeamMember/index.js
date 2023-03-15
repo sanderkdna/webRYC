@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from '../Title'
-import './style.scss'
+import './style.css'
 
 // images
 import teamMember1 from '../../images/expert/1.jpg'

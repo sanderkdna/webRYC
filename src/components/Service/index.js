@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './style.css'
 
 const services = [
     { icon: 'fi flaticon-lawyer', subtitle: 'Book Your', title: 'Appointment' },

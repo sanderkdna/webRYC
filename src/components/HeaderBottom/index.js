@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import logo from '../../images/logo/logo.png'
-import './style.scss'
+import './style.css'
 
 const HeaderBottom = props => {
     const [search, setSearch] = useState()

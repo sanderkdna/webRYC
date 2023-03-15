@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './style.css'
 const tags = [
     'Attorney', 'Lawyer', 'Accident', 'Consultation', 'Fraud', 'Car', 'Law', 'Immigration', 'Criminal', 'Business', 'Corporate',
 ]

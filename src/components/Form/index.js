@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Joi from 'joi-browser'
 import { toast } from 'react-toastify';
-import './style.scss'
+import './style.css'
 class Form extends Component {
     state = {
         name: '',

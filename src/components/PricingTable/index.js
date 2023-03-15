@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from '../Title'
-import './style.scss'
+import './style.css'
 const pricingpanel = [
     {
         icon: 'flaticon-scale',

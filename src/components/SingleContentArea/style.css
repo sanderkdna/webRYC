@@ -1,0 +1,60 @@
+.singleContentArea .singleContentImg {
+    margin-bottom: 50px;
+}
+.singleContentArea .singleContentImg img {
+    width: 100%;
+}
+.singleContentArea .singleContentWrap h3 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.singleContentArea .singleContentWrap h5 {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+@media (max-width: 576px) {
+    .singleContentArea .singleContentWrap h5 {
+        line-height: 30px;
+        font-size: 18px;
+   }
+}
+.singleContentArea .singleContentWrap p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+@media (max-width: 576px) {
+    .singleContentArea .singleContentWrap p {
+        font-size: 14px;
+   }
+}
+.singleContentArea .singleContentWrap .avatarWra {
+    margin-top: 15px;
+}
+.singleContentArea .singleContentWrap .avatarWra img {
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .singleContentArea .singleContentWrap .avatarWra img {
+        margin-bottom: 30px;
+   }
+}
+.singleContentArea .singleContentWrap .avatarWra h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.singleContentArea .singleContentWrap .avatarWra ul li {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.singleContentArea .singleContentWrap .avatarWra ul li::before {
+    content: "\f046";
+    margin-right: 15px;
+    font-family: 'fontawesome';
+    color: #c0b596;
+}
+.singleContentArea .singleContentWrap .avatarWra ul li:last-child {
+    margin-bottom: 0;
+}

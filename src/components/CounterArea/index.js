@@ -1,6 +1,6 @@
 import React from 'react'
 import Odometer from 'react-odometerjs';
-import './style.scss'
+import './style.css'
 const counters = [
     { value: '95', title: 'Cases Won', level: '%' },
     { value: '863', title: 'Trusted Client' },

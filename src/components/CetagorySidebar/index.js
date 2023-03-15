@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './style.css'
 
 const cetagoryMenu = [
     { name: 'Family Law', route: "case-stadies-details" },

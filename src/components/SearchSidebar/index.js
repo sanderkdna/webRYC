@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './style.scss'
+import './style.css'
 const SearchSidebar = ({ className }) => {
     const [search, setSearch] = useState()
     const submitHandler = e => {

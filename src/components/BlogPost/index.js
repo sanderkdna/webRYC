@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './style.css'
 
 import blog1 from '../../images/blog-page/1.jpg'
 import blog2 from '../../images/blog-page/2.jpg'

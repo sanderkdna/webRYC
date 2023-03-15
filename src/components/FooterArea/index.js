@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../images/logo/logo.png'
-import './style.scss'
+import './style.css'
 const footerLinks = [
     {
         title: 'Quick Link', menus: [

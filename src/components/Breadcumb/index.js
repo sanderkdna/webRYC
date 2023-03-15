@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './style.css'
 const Breadcumb = ({ className, title, breadcumbMenu, background }) => {
     return (
         <div style={{ backgroundImage: `url(${background})` }} className={className}>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import ModalVideo from 'react-modal-video'
 import { Link } from 'react-router-dom'
-import 'react-modal-video/scss/modal-video.scss'
-import './style.scss'
+import './style.css'
 
 const About = ({ subTitle, title, videoId, className, signature, pragraphs,images,orderLast }) => {
     const [video, setVideo] = useState(false)

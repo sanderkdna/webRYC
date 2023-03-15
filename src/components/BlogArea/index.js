@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../Title'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './style.css'
 
 // images
 import blog1 from '../../images/blog/1.jpg'

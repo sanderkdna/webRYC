@@ -1,0 +1,62 @@
+.contactArea {
+    background: url(../../images/contact/1.jpg) center center/cover no-repeat local;
+    position: relative;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+.contactArea::before {
+    content: "";
+    background-color: rgba(21, 26, 48, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@media (max-width: 768px) {
+    .contactArea .contactInfo {
+        margin-bottom: 40px;
+   }
+}
+.contactArea .contactInfo span {
+    font-size: 16px;
+    color: #ada282;
+}
+.contactArea .contactInfo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.contactArea .contactInfo h2::before {
+    content: "";
+    position: absolute;
+    right: -68px;
+    top: 25px;
+    width: 60px;
+    height: 1px;
+    background: #c0b596;
+}
+@media (max-width: 1200px) {
+    .contactArea .contactInfo h2::before {
+        width: 30px;
+        left: -35px;
+   }
+}
+.contactArea .contactInfo h6 {
+    font-size: 18px;
+    color: #c0b596;
+    font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 1200px) {
+    .contactArea .contactInfo h6 {
+        font-size: 16px;
+   }
+}
+.contactArea .contactInfo p {
+    margin-top: 30px;
+    color: #ddd;
+    line-height: 30px;
+}

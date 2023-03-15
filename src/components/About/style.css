@@ -1,0 +1,98 @@
+.aboutArea {
+    padding: 120px 0px 100px;
+}
+.aboutArea .aboutImageWrap {
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .aboutArea .aboutImageWrap {
+        margin-bottom: 40px;
+        margin-right: 0;
+   }
+}
+@media (max-width: 768px) {
+    .aboutArea .aboutImageWrap img {
+        width: 100%;
+   }
+}
+.aboutArea .aboutImageWrap::before {
+    content: "";
+    background-color: #c0b596;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+}
+.aboutArea .aboutImageWrap i {
+    border: 1px solid #fff;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.aboutArea .aboutImageWrap i:hover {
+    background: #d4c291;
+}
+.aboutArea .aboutContent span {
+    font-size: 16px;
+    color: #ada282;
+    display: block;
+}
+.aboutArea .aboutContent h2 {
+    margin-bottom: 20px;
+}
+.aboutArea .aboutContent p {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+@media (max-width: 1200px) {
+    .aboutArea .aboutContent p {
+        font-size: 14px;
+        margin-bottom: 20px;
+   }
+}
+.aboutArea .aboutContent .signature {
+    margin-top: 35px;
+}
+.aboutArea.aboutAreaStyleTwo {
+    padding: 100px 0px;
+}
+.aboutArea.aboutAreaStyleTwo .aboutImageWrap {
+    margin: 0px 10px 10px 0px;
+}
+.aboutArea.aboutAreaStyleTwo .aboutImageWrap::before {
+    left: auto;
+    right: -10px;
+    top: auto;
+    bottom: -10px;
+}
+@media (max-width: 800px) {
+    .aboutArea.aboutAreaStyleTwo .aboutContent {
+        margin-bottom: 40px;
+   }
+}
+.aboutArea.aboutAreaStyleTwo .aboutContent h2 {
+    position: relative;
+}
+.aboutArea.aboutAreaStyleTwo .aboutContent h2::before {
+    content: "";
+    position: absolute;
+    left: -68px;
+    top: 19px;
+    width: 60px;
+    height: 1px;
+    background: #c0b596;
+}

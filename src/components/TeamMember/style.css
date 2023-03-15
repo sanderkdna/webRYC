@@ -1,0 +1,107 @@
+.teamArea {
+    padding: 100px 0px;
+}
+.teamArea .teamWrapper {
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 5, .08);
+    position: relative;
+}
+.teamArea .teamWrapper .teamImage {
+    border: 1px solid #fff;
+    border-bottom: none;
+}
+.teamArea .teamWrapper .teamContent {
+    position: relative;
+    margin-top: -40px;
+    background: #f5f5f5;
+    transform: translateY(40px);
+    transition: all 0.3s;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+}
+.teamArea .teamWrapper .teamContent h3 {
+    padding: 30px 0 5px;
+    font-size: 24px;
+}
+.teamArea .teamWrapper .teamContent span {
+    color: #ada282;
+}
+.teamArea .teamWrapper .teamContent ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.teamArea .teamWrapper .teamContent ul li {
+    padding: 0 10px;
+}
+.teamArea .teamWrapper .teamContent ul li a {
+    color: #c0b596;
+}
+.teamArea .teamWrapper:hover .teamContent {
+    transform: translateY(0px);
+    background: #fff;
+}
+.teamArea .slick-prev, .teamArea .slick-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(192, 181, 150, .3);
+    transition: all 0.3s;
+    border-radius: 5px;
+    z-index: 10;
+    cursor: pointer;
+}
+@media (max-width: 375px) {
+    .teamArea .slick-prev, .teamArea .slick-next {
+        height: 35px;
+        width: 35px;
+   }
+}
+@media (max-width: 1200px) {
+    .teamArea .slick-prev, .teamArea .slick-next {
+        background: rgba(192, 181, 150, .9);
+   }
+}
+.teamArea .slick-prev:hover, .teamArea .slick-next:hover {
+    background: rgba(192, 181, 150, .8);
+}
+.teamArea .slick-prev:hover::before, .teamArea .slick-next:hover::before {
+    color: #333;
+}
+.teamArea .slick-prev {
+    left: -70px;
+}
+@media (max-width: 1200px) {
+    .teamArea .slick-prev {
+        left: -30px;
+   }
+}
+@media (max-width: 600px) {
+    .teamArea .slick-prev {
+        left: -10px;
+   }
+}
+.teamArea .slick-prev::before {
+    font-family: "FontAwesome";
+    content: "\f104";
+    opacity: 1;
+    color: #333;
+}
+.teamArea .slick-next {
+    right: -70px;
+}
+@media (max-width: 1200px) {
+    .teamArea .slick-next {
+        right: -30px;
+   }
+}
+@media (max-width: 600px) {
+    .teamArea .slick-next {
+        right: -10px;
+   }
+}
+.teamArea .slick-next::before {
+    font-family: "FontAwesome";
+    content: "\f105";
+    opacity: 1;
+    color: #333;
+}

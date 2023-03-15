@@ -1,7 +1,7 @@
 import React from 'react'
 import avatarImg from '../../images/practice/4.jpg'
 
-import './style.scss'
+import './style.css'
 
 const listItem = [
     'The master-builder of human happiness.',

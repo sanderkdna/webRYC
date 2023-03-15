@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './style.css'
 const HeaderTop = props => {
     return (
         <div className={props.className}>
