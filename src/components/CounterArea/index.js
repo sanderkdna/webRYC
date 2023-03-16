@@ -14,7 +14,7 @@ const CounterArea = ({ className, fullWidth }) => {
                 <div className="row">
                     <div className={fullWidth ? "col-12" : "col-lg-6 col-12"}>
                         <div className="counterMainWrapper">
-                            {counters.map((count, i) => (
+                            {/* {counters.map((count, i) => (
                                 <div key={i} className="counterWrap">
                                     <div className="count">
                                         <Odometer
@@ -24,7 +24,7 @@ const CounterArea = ({ className, fullWidth }) => {
                                     </div>
                                     <p>{count.title}</p>
                                 </div>
-                            ))}
+                            ))} */}
                         </div>
                     </div>
                 </div>

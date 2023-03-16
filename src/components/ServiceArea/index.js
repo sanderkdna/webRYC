@@ -1,5 +1,6 @@
 import React from "react";
 import SectionTitle from '../Title'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const ServiceArea = ({ className, title, subTitle,services }) => {
@@ -17,11 +18,15 @@ const ServiceArea = ({ className, title, subTitle,services }) => {
                         <div key={index} className="col-lg-4 col-md-6">
                             <div className="serviceWrap">
                                 <div className="serviceIcon">
-                                    <i className={`fi ${service.icon}`}></i>
+                                    <img src={service.icon} alt="" />
+                                    {/* <i className={`fi ${service.icon}`}></i> */}
                                 </div>
                                 <div className="serviceContent">
                                     <h3>{service.title}</h3>
                                     <p>{service.content}</p>
+                                </div>
+                                <div className="btnStyle">
+                                    <Link to={service.link}>Conoce más...</Link>
                                 </div>
                             </div>
                         </div>

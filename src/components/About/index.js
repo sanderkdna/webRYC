@@ -28,7 +28,7 @@ const About = ({ subTitle, title, videoId, className, signature, pragraphs,image
                                 <p key={i}>{pragraph.text}</p>
                             ))}
                             <div className="btnStyle">
-                                <Link to='/about'>More About Us..</Link>
+                                <Link to='/about'>Conoce más sobre nosotros..</Link>
                             </div>
                             {signature && <div className="signature">
                                 <img src={signature} alt="" />

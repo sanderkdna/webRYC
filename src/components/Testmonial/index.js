@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './style.css'
 
 // images
-import testmonial from '../../images/testimonial/1.png'
+import testmonial from '../../images/testimonial/DSC09397-2.jpeg'
 import testmonial2 from '../../images/testimonial/2.png'
 
 const sliders = [

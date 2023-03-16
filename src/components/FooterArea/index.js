@@ -4,30 +4,39 @@ import logo from '../../images/logo/logo.png'
 import './style.css'
 const footerLinks = [
     {
-        title: 'Quick Link', menus: [
-            { name: 'Home', route: '/' },
-            { name: 'Practice Area', route: 'practice' },
-            { name: 'Our Team', route: 'team' },
-            { name: 'Recent Case', route: 'case' },
-            { name: 'Our Blog', route: 'blog' },
+        title: 'BUCARAMANGA', menus: [
+            { name: 'Cra 35 # 46 – 112 Cabecera del llano' },
+            { name: '(607) 697 15 65', },
+            { name: 'Cel: 316 480 44 40', },
+            { name: 'Encuentranos', route: 'https://goo.gl/maps/HwZqTJJA1pEDivpS6'},
+            { name: '', },
         ]
     },
     {
-        title: 'Practice Area', menus: [
-            { name: 'Family Law', route: 'home' },
-            { name: 'Criminal Law', route: 'home' },
-            { name: 'Parsonal Injury', route: 'home' },
-            { name: 'Real Estate Law', route: 'home' },
-            { name: 'Business Law', route: 'home' },
+        title: 'BOGOTA', menus: [
+            { name: 'BOGOTA, DC Cl 12B # 9 – 33 Of. 408, Edificio Sabanas' },
+            { name: 'PBX: (607) 697 15 65 Ext 115', },
+            { name: 'Cel: 316 480 44 40', },
+            { name: 'Encuentranos', route: 'https://goo.gl/maps/yNWRwxnHMaqsSSs89'},
+            { name: '', },
         ]
     },
     {
-        title: 'Contact Us', menus: [
-            { name: 'Head Office Address' },
-            { name: '121 King Street, Melbourne West,', },
-            { name: 'Australia', },
-            { name: 'Phone: 888 123-4587', },
-            { name: 'Email: info@example.com', },
+        title: 'BARRANQUILLA', menus: [
+            { name: 'Calle 102 # 49 E-89 Edificio SOHO, Piso 12, Apto 1204B' },
+            { name: 'Tel: (605) 3 35 81 29', },
+            { name: 'PBX (7) 697 15 65 Ext 122', },
+            { name: 'Cel 312 530 46 50', },
+            { name: 'Encuentranos', route: 'https://goo.gl/maps/Zwh2vnJD8DiQd75R7'},
+        ]
+    },
+    {
+        title: 'TUNJA', menus: [
+            { name: 'Cl 17# 11 – 51 Of 203 Edificio Novocenter, Centro de Negocios y Especialidades' },
+            { name: 'Tel: (608) 741 04 84', },
+            { name: 'PBX: 697 15 65 Ext 119 – 120', },
+            { name: 'Cel: 311 440 3435', },
+            { name: 'Encuentranos', route: 'https://goo.gl/maps/Jh7E2biGD2uHS6WZ9'},
         ]
     },
 ]
@@ -38,21 +47,21 @@ const FooterArea = () => {
             <div className="footerTopArea">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6 col-sm-6">
+                        {/* <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="footerLogo">
                                 <Link to="/">
                                     <img src={logo} alt="" />
                                 </Link>
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
                             </div>
-                        </div>
+                        </div> */}
                         {footerLinks.map((menu, i) => (
                             <div key={i} className="col-lg-3 col-md-6 col-sm-6">
                                 <div className="footerWrap">
                                     <h3>{menu.title}</h3>
                                     <ul>
                                         {menu.menus.map((item, i) => (
-                                            <li key={i}>{item.route ? <Link to={`/${item.route}`}>{item.name}</Link> : `${item.name}`}</li>
+                                            <li key={i}>{item.route ? <Link to={{ pathname: item.route}} target="_blank">{item.name}</Link> : `${item.name}`}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -66,7 +75,7 @@ const FooterArea = () => {
                     <div className="footerBottomContent">
                         <div className="row">
                             <div className="col-md-8 col-sm-10 col-12">
-                                <span>Privacy Policy | © 2018 Barristar. All rights reserved</span>
+                                <span>Privacy Policy | © 2023 Rodriguez & Correa Abogados SAS. Reservados todos los derechos</span>
                             </div>
                             <div className="col-md-4 col-sm-2 col-12">
                                 <ul className="socialListFooter">

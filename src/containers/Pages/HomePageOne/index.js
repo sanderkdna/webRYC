@@ -17,7 +17,7 @@ import BlogArea from "../../../components/BlogArea";
 import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 // images
-import about from "../../../images/about/2.jpg";
+import about from "../../../images/about/DSC08765-2.jpeg";
 import signature from "../../../images/about/1.png";
 
 // images
@@ -27,12 +27,14 @@ import portfolio3 from "../../../images/studies/3.jpg";
 import portfolio4 from "../../../images/studies/4.jpg";
 import portfolio5 from "../../../images/studies/5.jpg";
 
+//images services
+import servicesasesorias from "../../../images/services/servicesasesorias.png";
+import servicesrecaudo from "../../../images/services/servicesrecaudo.png";
+import servicesvirtuallegal from "../../../images/services/servicesvirtuallegal.png";
+
 const aboutText = [
   {
-    text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at ,",
-  },
-  {
-    text: 'and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum',
+    text: "RODRIGUEZ & CORREA ABOGADOS S.A.S está integrado por abogados especializados, ampliamente calificados en las diferentes áreas del derecho, con un alto perfil empresarial, ofreciendo herramientas legales y soluciones reales a las necesidades que presentan nuestros clientes, logrando de esta manera posesionarnos como una empresa comprometida prestando una Asesoría Integral a nivel local y nacional.",
   },
 ];
 
@@ -55,40 +57,25 @@ const heroSliders = [
 
 const services = [
   {
-    icon: "flaticon-parents",
-    title: "Family Law",
+    icon: servicesasesorias,
+    title: "Asesoría y Consultoría Juridica",
+    link: "https://rodriguezcorreaabogados.com/docs/PORTAFOLIO_ASESORIA_Y_CONSULTORIA_JURIDICA_2020.pdf",
     content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
+      "#resumen en una frase",
   },
   {
-    icon: "flaticon-wounded",
-    title: "Personal Injury",
+    icon: servicesrecaudo,
+    title: "Recaudo de Cartera",
+    link: "https://rodriguezcorreaabogados.com/docs/RECAUDO_DE_CARTERA_2020_WEB.pdf",
     content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
+      "#resumen en una frase",
   },
   {
-    icon: "flaticon-employee",
-    title: "Business Law",
+    icon: servicesvirtuallegal,
+    title: "Virtual Legal",
+    link: "https://rodriguezcorreaabogados.com/docs/PORTAFOLIO_VIRTUAL_LEGAL_2021.pdf",
     content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
-  },
-  {
-    icon: "flaticon-thief",
-    title: "Criminal Law",
-    content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
-  },
-  {
-    icon: "flaticon-university-graduate-hat",
-    title: "Education Law",
-    content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
-  },
-  {
-    icon: "flaticon-house",
-    title: "Real Estate Law",
-    content:
-      "It is a long established fact that a reader will be distracted by the readable content of ",
+      "#resumen en una frase",
   },
 ];
 
@@ -120,15 +107,15 @@ const HomePageOne = () => {
       <Locations />
       <About
         className="aboutArea"
-        title="About Us"
+        title="Sobre Nosotros"
         images={about}
         signature={signature}
         pragraphs={aboutText}
       />
       <ServiceArea
         className="ourServiceArea"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
+        title="Visualiza nuestros Portafolios de Servicios"
+        subTitle="Somos Especialistass"
         services={services}
       />
       <Portfolio
