@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import HeaderBotton from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
+import VirtualLegal from "../../../components/VirtualLegal";
+import Locations from "../../../components/Locations";
 import HeroVideo from "../../../components/HeroVideo";
 import Service from "../../../components/Service";
 import About from "../../../components/About";
@@ -114,6 +116,8 @@ const HomePageOne = () => {
                 className="heroSliderArea" /> */}
       <HeroVideo video={"/videos/corporativo.mp4"} className="heroSliderArea" />
       <Service className="serviceArea" />
+      <VirtualLegal />
+      <Locations />
       <About
         className="aboutArea"
         title="About Us"
