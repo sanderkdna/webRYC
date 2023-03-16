@@ -19,7 +19,7 @@ const HeaderBottom = (props) => {
   };
   return (
     <div className={props.className}>
-      <div className="container">
+      <div className="containerFluid">
         <div className="headerBottomMainWrapper">
           <div className="row">
             <div className="col-lg-3 col-md-10 col-sm-6 col-8">
@@ -61,7 +61,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/practice">
-                    Practice
+                    COBERTURA
                   </NavLink>
                   <ul className="subMenu">
                     <li>
@@ -79,7 +79,7 @@ const HeaderBottom = (props) => {
 
                 <li>
                   <NavLink exact to="/case-stadies">
-                    Cases
+                  SERVICIOS
                   </NavLink>
                   <ul className="subMenu">
                     <li>
@@ -96,7 +96,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/blog-left">
-                    News
+                  VIRTUAL LEGAL
                   </NavLink>
                   <ul className="subMenu">
                     <li>
@@ -118,7 +118,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/attorneys">
-                    Attorneys
+                  CLIENTES
                   </NavLink>
                   <ul className="subMenu">
                     <li>
@@ -135,7 +135,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/contact">
-                    Contact
+                  CONTACTO
                   </NavLink>
                 </li>
               </ul>

@@ -3,7 +3,7 @@ import "./style.css";
 const HeaderTop = (props) => {
   return (
     <div className={props.className}>
-      <div className="container">
+      <div className="containerFluid">
         <div className="headerTopMainWrapper">
           <div className="row">
             <div className="col-md-3 col-sm-12 col-12 col-lg-5">
@@ -18,19 +18,6 @@ const HeaderTop = (props) => {
                     </span>
                     <span class="elementor-icon-list-text">
                       Coordinador de Procesos{" "}
-                    </span>
-                  </a>
-                </li>
-                <li class="elementor-icon-list-item elementor-inline-item">
-                  <a
-                    href="https://procesos.coordinadordeprocesosjudiciales.com/login/"
-                    target="_blank"
-                  >
-                    <span class="elementor-icon-list-icon">
-                      <i className="fa fa-globe"></i>{" "}
-                    </span>
-                    <span class="elementor-icon-list-text">
-                      Notificaciones Electrónicas
                     </span>
                   </a>
                 </li>
