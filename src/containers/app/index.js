@@ -15,6 +15,7 @@ import ContactPage from '../Pages/ContactPage'
 import BlogLeftPage from '../Pages/BlogLeftPage'
 import BlogRightPage from '../Pages/BlogRightPage'
 import BlogFullWidth from '../Pages/BlogFullWidth'
+import SitemaGestion from '../Pages/SitemaGestion'
 import './App.css';
 
 class App extends Component {
@@ -33,11 +34,12 @@ class App extends Component {
                         <Route exact path="/case-stadies" component={PortfolioPage} />
                         <Route exact path="/case-stadies-details" component={SinglePortfolioPage} />
                         <Route exact path="/attorneys" component={TeamPage} />
-                        <Route exact path="/attorneys-single" component={SingleTeamPage} />
+                        <Route exact path="/abogados" component={SingleTeamPage} />
                         <Route exact path="/contact" component={ContactPage} />
                         <Route exact path="/blog-left" component={BlogLeftPage} />
                         <Route exact path="/blog-right" component={BlogRightPage} />
                         <Route exact path="/blog-fullwidth" component={BlogFullWidth} />
+                        <Route exact path="/sistema-integrado-gestion" component={SitemaGestion} />
                     </Switch>
                 </BrowserRouter>
             </Fragment>

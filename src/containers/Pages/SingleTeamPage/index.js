@@ -18,23 +18,20 @@ import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Attorneys', route: '/attorneys' },
-    { name: 'Attorneys Details' }
+    { name: 'Abogados', route: '/abogados' },
+    { name: 'Gime Alexander Rodriguez' }
 ]
 const teamMembarInfo = [
-    { level: 'Positon: ', text: 'Siniour Lawyer' },
-    { level: 'Practice Area: ', text: 'Family Lawyer, Criminal Defence, Personal Injury' },
-    { level: 'Experience: ', text: '10 Years' },
-    { level: 'Address: ', text: 'Nayra Park, 365 B Grand Ave, Los Angeles, CA 10872' },
-    { level: 'Phone: ', text: '0800.123.456' },
-    { level: 'Email: ', text: 'youremail@gmail.com' },
-    { level: 'Fax: ', text: ' 6985231456' },
+    { level: 'Positon: ', text: 'Especializado en Derecho Laboral y Relaciones Industriales. Universidad externado de Colombia' },
+    { level: 'Practice Area: ', text: 'Derecho Laboral, Relaciones Industriales' },
+    { level: 'Experience: ', text: '+20 Años' },
+    { level: 'Address: ', text: 'Cra 35 # 46 – 112 Cabecera del llano' },
+    { level: 'Phone: ', text: '+57 3105547106.123.456' },
+    { level: 'Email: ', text: 'info@rodriguezcorreaabogados.com' },
 ]
 const teamContents = [
-    'Admization Institute of Law andTechnology, Juzment School of Management,Cambridge',
-    'Academy University School of Law, Boston, MA',
-    'The Syntify High School Of New York',
-    'Education & Court Admissions',
+    'DERECHO LABORAL y RELACIONES INDUSTRIALES DE LA UNIVERSIDAD EXTERNADO DE COLOMBIA.',
+    'ESPECIALIZACIÓN EN CONTRATACIÓN ESTATAL DE LA UNIVERSIDAD EXTERNADO DE COLOMBIA',
 ]
 
 const portfolioItem = [
@@ -52,7 +49,7 @@ const SingleTeamPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Our Attorneys"
+                title="Gime Alexander Rodriguez"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
@@ -66,12 +63,12 @@ const SingleTeamPage = () => {
                                         <div className="singleTeamImg">
                                             <img src={team} alt="" />
                                         </div>
-                                        <h4>Lily Watson</h4>
+                                        <h4>Gime Alexander Rodriguez</h4>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
                                     <div className="singleTeamContent">
-                                        <h4>Important Information</h4>
+                                        <h4>Información Importante</h4>
                                         <ul className="teamMembarInfo">
                                             {teamMembarInfo.map((teamInfo, i) => (
                                                 <li key={i}>
@@ -81,26 +78,39 @@ const SingleTeamPage = () => {
                                             ))}
                                         </ul>
                                         <ul className="socialShare">
-                                            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
+                                            <li><a href="https://www.facebook.com/rodriguezgime"><i className="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://www.instagram.com/rodriguezgimeabogado/?utm_medium=copy_link"><i className="fa fa-instagram"></i></a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="singleTeamInfo">
-                                        <h3>Personal Experience</h3>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words,</p>
-                                        <h5>Education</h5>
+                                        <h3>PERFIL</h3>
+                                        <p>DR. GIME ALEXANDER RODRIGUEZ. Abogado Titulado, con especialización en:</p>
                                         <ul>
                                             {teamContents.map(teamContent => (
                                                 <li key={teamContent}>{teamContent}</li>
                                             ))}
                                         </ul>
-                                        <h5>Language</h5>
-                                        <span>French(fluent), English (fluent), Greek , chinese.</span>
+                                        <p>Con una trayectoria de más de Dieciocho (18) años en asesoría y consultoría de entidades de derecho público y privado; se ha desempeñado como Abogado externo de importantes firmas a nivel nacional e Internacional, Abogado litigante ante Despachos, Tribunales y Corte; Gestor y fundador de la firma RODRIGUEZ & CORREA ABOGADOS SAS.</p>
+<p>Abogado, con amplia trayectoria con visión empresarial habiéndose destacado dentro de las empresas de asesoría jurídica integral, más reconocidas a nivel Local y estando en un nivel de posicionamiento Nacional, proyectando sus alcances de expansión a nivel Internacional.</p>
+                                        <h5>EXPERIENCIA</h5>
+                                        <h6>Gerente</h6>
+                                        <p>Abogado, asesor en área laboral, civil, comercial tanto en industria pública y privada con amplia experiencia en el litigio y asesor integral de empresas Locales y Nacionales.</p>
+                                        <h6>Abogado</h6>
+                                        <p>Abogado de entidades de derecho público y privado, implementando sistemas de contratación laboral y comercial, defensas en litigios y representación ante jurisdicción administrativa y judicial.</p>
+                                        <h5>EDUCACIÓN</h5>
+                                        <h6>Pontificia Universidad Javeriana</h6>
+                                        <p>Estudios en Insolvencia e Intervención – Reorganización Empresarial. 2018</p>
+                                        <h6>Universidad Externado de Colombia</h6>
+                                        <p>Especialización en Contratación Estatal, Estudios jurídicos, general. 2013 – 2014</p>
+                                        <p>Promotor y especialista en Reorganizaciones Empresariales inscrito ante la Superintendencia de Sociedades.</p>
+                                        <h6>Universidad Externado de Colombia</h6>
+                                        <p>Especialista, Derecho Laboral y Relaciones Industriales. 2007 – 2008</p>
+                                        <h6>Universidad Cooperativa de Colombia</h6>
+                                        <p>Abogado, Laboralista. 1995 – 2000</p>
+
                                     </div>
                                 </div>
                             </div>
@@ -117,9 +127,6 @@ const SingleTeamPage = () => {
             /> */}
             <ContactArea
                 className="contactArea"
-            />
-            <NewsLetter
-                className="newsLetterArea"
             />
             <FooterArea />
         </Fragment>
