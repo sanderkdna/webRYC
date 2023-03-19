@@ -130,7 +130,7 @@ const HomePageOne = () => {
         title="Qualified Attorneys "
         subTitle="Meet Our Experts"
         className="teamArea"
-        slider={true}
+        slider={false}
       />
       <CounterArea className="counterArea" />
       <BlogArea

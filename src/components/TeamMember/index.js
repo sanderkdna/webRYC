@@ -207,7 +207,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                             <div className="teamImage">
                                                 <img src={team.image} alt="" />
                                             </div>
-                                            <div className="teamContent">
+                                            {/* <div className="teamContent">
                                                 <h3>{team.name}</h3>
                                                 <span>{team.level}</span>
                                                 <ul>
@@ -215,7 +215,7 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                                         <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
                                                     ))}
                                                 </ul>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 ))}
