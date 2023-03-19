@@ -6,7 +6,7 @@ const HeaderTop = (props) => {
       <div className="containerFluid">
         <div className="headerTopMainWrapper">
           <div className="row">
-            <div className="col-md-3 col-sm-12 col-12 col-lg-5">
+            <div className="col-md-4 col-sm-12 col-12 col-lg-4">
               <ul className="d-flex accountLoginArea">
                 <li class="elementor-icon-list-item elementor-inline-item">
                   <a
@@ -23,7 +23,7 @@ const HeaderTop = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-6 col-sm-12 col-12 col-lg-5">
+            <div className="col-md-4 col-sm-12 col-12 col-lg-4">
               <ul className="headerContact">
                 <li>
                   <i className="fa fa-phone"></i>{" "}
@@ -36,10 +36,29 @@ const HeaderTop = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-2 col-md-3 col-sm-12">
-              <div className="btnStyle btnStyle2 text-right">
-                <a href="/contact">Contáctanos</a>
-              </div>
+            <div className="col-md-4 col-sm-2 col-12 col-lg-4">
+              <ul className="socialListFooter">
+                <li>
+                  <a href="https://www.facebook.com/rodriguezcorreaabogados" target={"_blank"}>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/rodriguezgime" target={"_blank"}>
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/rodriguezcorreaabogados?utm_medium=copy_link" target={"_blank"}>
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <div className="btnStyle btnStyle2 text-right">
+                    <a href="/contact">Contáctanos</a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
