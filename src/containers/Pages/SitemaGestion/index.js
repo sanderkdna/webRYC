@@ -49,7 +49,7 @@ const SitemaGestion = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Our Attorneys"
+                title="Sistema Integrado de Gestión"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />

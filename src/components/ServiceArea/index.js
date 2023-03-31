@@ -25,7 +25,7 @@ const ServiceArea = ({ className, title, subTitle,services }) => {
                                     <h3>{service.title}</h3>
                                     <p>{service.content}</p>
                                 </div>
-                                <div className="btnStyle">
+                                <div className="btnStyle text-center">
                                     <Link to={service.link}>Conoce más...</Link>
                                 </div>
                             </div>
@@ -37,4 +37,5 @@ const ServiceArea = ({ className, title, subTitle,services }) => {
 
     )
 }
+
 export default ServiceArea

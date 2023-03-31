@@ -18,8 +18,7 @@ import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Practice', route: '/practice' },
-    { name: 'Practice area details' }
+    { name: 'Políticas y Protocolos' }
 ]
 
 
@@ -33,26 +32,14 @@ const PracticeSinglePage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Practice Single Area"
+                title="Políticas y Protocolos en Rodriguez & Correa Abogados"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
             <div className="singleArea">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4">
-                            <aside className=" pr25">
-                                <BannerSidebar
-                                    image={banner}
-                                    className="bannerWrapper"
-                                />
-                                <CetagorySidebar
-                                    title="Category"
-                                    className="cetagoryWrap"
-                                />
-                            </aside>
-                        </div>
-                        <div className="col-lg-8">
+                        <div className="col-lg-12">
                             <SingleContentArea
                                 className="singleContentArea"
                                 image={single}
@@ -62,9 +49,6 @@ const PracticeSinglePage = () => {
                     </div>
                 </div>
             </div>
-            <NewsLetter
-                className="newsLetterArea"
-            />
             <FooterArea />
         </Fragment>
     )

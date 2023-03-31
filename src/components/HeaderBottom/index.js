@@ -11,6 +11,8 @@ const HeaderBottom = (props) => {
     e.preventDefault();
     console.log(search);
   };
+
+    
   const clickHandler = () => {
     setTrigger(!trigger);
   };
@@ -48,8 +50,8 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/practice-details">
-                        Políticas para el tratamiento de datos personales
+                      <NavLink exact to="/documentos">
+                        Políticas
                       </NavLink>
                     </li>
                     <li>
@@ -58,19 +60,15 @@ const HeaderBottom = (props) => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/practice-details">
-                        Protocolos de Bioseguridad
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink exact to="/practice-details">
+                      
+                      <NavLink exact to="/gallery">
                         Galería
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink exact to="/practice-details">
-                        Pagos en Linea
-                      </NavLink>
+                      <Link to={{ pathname: "https://checkout.wompi.co/l/znJdOy" }} target="_blank">
+                          Pagos en Linea
+                      </Link>
                     </li>
                     <li>
                       <NavLink exact to="/abogados">
@@ -80,29 +78,29 @@ const HeaderBottom = (props) => {
                   </ul>
                 </li>
                 <li>
-                  <NavLink exact to="/practice">
+                  <NavLink exact to="/cobertura">
                     COBERTURA
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink exact to="/case-stadies">
+                  <NavLink exact to="/services">
                   SERVICIOS
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/blog-left">
+                  <NavLink exact to="/virtual-legal">
                   VIRTUAL LEGAL
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink exact to="/attorneys">
+                  <NavLink exact to="/clientes">
                   CLIENTES
                   </NavLink>
                 </li>
                 <li>
                   <NavLink exact to="/contact">
-                  CONTACTO
+                  PQR
                   </NavLink>
                 </li>
               </ul>

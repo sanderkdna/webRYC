@@ -67,6 +67,9 @@
 .aboutArea .aboutContent .signature {
     margin-top: 35px;
 }
+.aboutArea .aboutContent .signature img{
+    width:40%;
+}
 .aboutArea.aboutAreaStyleTwo {
     padding: 100px 0px;
 }

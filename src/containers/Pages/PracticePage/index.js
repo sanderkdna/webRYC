@@ -8,6 +8,7 @@ import Testmonial from "../../../components/Testmonial";
 import PricingTable from "../../../components/PricingTable";
 import NewsLetter from '../../../components/Newsletter'
 import FooterArea from '../../../components/FooterArea'
+import LocationsSingle from "../../../components/LocationsSigle";
 // images
 import breadcumb from '../../../images/breadcumb/1.jpg'
 
@@ -53,7 +54,7 @@ const services = [
 
 const breadcumbMenu = [
     {name:'Home',route:'/'},
-    {name:'Practice area'}
+    {name:'Cobertura'}
 ]
 
 const PracticePage = () => {
@@ -65,12 +66,13 @@ const PracticePage = () => {
             </header>
             <Breadcumb 
                 className="breadcumbArea"
-                title="Practice Area"
+                title="Cobertura"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
             <Service className="serviceArea mt-0" />
-            <ServiceArea
+            <LocationsSingle />
+            {/* <ServiceArea
                 className="ourServiceArea ourServiceAreaStyleThree bgFFF"
                 title="How Can We Help You"
                 subTitle="Area Of Practice"
@@ -80,13 +82,8 @@ const PracticePage = () => {
                 className="pricingTableArea"
                 title="Pricing Table"
                 subTitle="Our Pricing Plan"
-            />
-            <Testmonial
-                className="testmonialArea pt100"
-            />
-            <NewsLetter
-                className="newsLetterArea"
-            />
+            /> */}
+
             <FooterArea/>
         </Fragment>
     )

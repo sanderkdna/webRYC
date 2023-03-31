@@ -5,6 +5,7 @@ import './style.css'
 
 const About = ({ subTitle, title, videoId, className, signature, pragraphs,images,orderLast }) => {
     const [video, setVideo] = useState(false)
+
     return (
         <div className={className}>
             <div className="container">

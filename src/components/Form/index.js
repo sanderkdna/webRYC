@@ -129,12 +129,24 @@ class Form extends Component {
     render() {
 
         const options = [
-            { level: 'Family Law', value: 'family law' },
-            { level: 'Criminal Law', value: 'criminal law' },
-            { level: 'Business Law', value: 'business law' },
-            { level: 'Personal Injury', value: 'personal injury' },
-            { level: 'Education Law', value: 'education law' },
-            { level: 'Drugs Crime', value: 'drugs crime' },
+            { level: 'Recaudo de Cartera', value: 'Recaudo de Cartera' },
+            { level: 'Insolvencias y Restituciones', value: 'Insolvencias y Restituciones' },
+            { level: 'Derecho Civil', value: 'Derecho Civil' },
+            { level: 'Derecho Laboral y Seguridad Social', value: 'Derecho Laboral y Seguridad Social' },
+            { level: 'Derecho Comercial', value: 'Derecho Comercial' },
+            { level: 'Reorganización Empresarial', value: 'Reorganización Empresarial' },
+            { level: 'Contratación Estatal y Derecho Administrativo', value: 'Contratación Estatal y Derecho Administrativo' },
+            { level: 'Derecho Penal', value: 'Derecho Penal' },
+            { level: 'Derecho Disciplinario', value: 'Derecho Disciplinario' },
+            { level: 'Virtual Legal', value: 'Virtual Legal' },
+        ]
+
+        const options2 = [
+            { level: 'Pregunta', value: 'Pregunta' },
+            { level: 'Queja', value: 'Queja' },
+            { level: 'Reclamo', value: 'Reclamo' },
+            { level: 'Felicitaciones', value: 'Felicitaciones' },
+
         ]
 
         return (
@@ -143,7 +155,7 @@ class Form extends Component {
                     <div className="col-sm-6 col-12">
                         <div className="formInput">
                             <input
-                                placeholder="Your Name"
+                                placeholder="Su Nombre"
                                 value={this.state.name}
                                 name="name"
                                 onChange={this.changeHandler}
@@ -156,7 +168,7 @@ class Form extends Component {
                     <div className="col-sm-6 col-12">
                         <div className="formInput">
                             <input
-                                placeholder="Phone"
+                                placeholder="Número de Teléfono"
                                 value={this.state.phone}
                                 name="phone"
                                 onChange={this.changeHandler}
@@ -168,7 +180,7 @@ class Form extends Component {
                     <div className="col-sm-6 col-12">
                         <div className="formInput">
                             <input
-                                placeholder="Email"
+                                placeholder="Dirección de Correo Electrónico"
                                 value={this.state.email}
                                 name="email"
                                 onChange={this.changeHandler}
@@ -181,13 +193,20 @@ class Form extends Component {
                         <div className="formInput">
                             {this.props.addressInfo ? (
                                 <div className="formInput">
-                                    <input
-                                        placeholder="Address"
+                                    <select
                                         value={this.state.address}
-                                        name="address"
-                                        onChange={this.changeHandler}
                                         className="form-control"
-                                        type="address" />
+                                        onChange={this.changeHandler}
+                                        name="address">
+                                        {options2.map(options2 => (
+                                            <option
+                                                key={options2.value}
+                                                value={options2.value}
+                                            >
+                                                {options2.level}
+                                            </option>
+                                        ))}
+                                    </select>
                                 </div>
                             ) : (
                                     <select
@@ -214,13 +233,13 @@ class Form extends Component {
                                 className="form-control"
                                 value={this.state.description}
                                 onChange={this.changeHandler}
-                                placeholder="Case Description..."
+                                placeholder="Describe tu situación"
                                 name="description" />
                             {this.state.error.description && <p>{this.state.error.description}</p>}
                         </div>
                     </div>
                     <div className="col-12">
-                        <button type="submit">Appointment</button>
+                        <button type="submit">Envíar</button>
                     </div>
                 </div>
             </form>

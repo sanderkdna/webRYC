@@ -17,10 +17,10 @@ import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'News' }
+    { name: 'Virtual Legal' }
 ]
 
-const BlogRightPage = () => {
+const VirtualLegal = () => {
     return (
         <Fragment>
             <header className="headerArea">
@@ -29,7 +29,7 @@ const BlogRightPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="News"
+                title="Virtual Legal"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
@@ -53,11 +53,11 @@ const BlogRightPage = () => {
                     </div>
                 </div>
             </div>
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )
 }
-export default BlogRightPage
+export default VirtualLegal

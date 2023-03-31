@@ -4,7 +4,7 @@
    }
 }
 .testmonialArea .testimonialContent {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 @media (max-width: 1200px) {
     .testmonialArea .testimonialContent {
@@ -29,7 +29,7 @@
 .testmonialArea .testimonialContent h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
     position: relative;
 }
 @media (max-width: 375px) {
@@ -38,13 +38,13 @@
    }
 }
 .testmonialArea .testimonialContent h2::before {
-    content: "";
+    /* content: "";
     position: absolute;
     left: -68px;
     top: 19px;
     width: 60px;
     height: 1px;
-    background: #c0b596;
+    background: #c0b596; */
 }
 @media (max-width: 576px) {
     .testmonialArea .testimonialContent h2::before {
@@ -60,8 +60,9 @@
 }
 .testmonialArea .testimonialContent .testmonialSlider .slideItem p {
     padding: 20px 33px 30px;
-    padding-right: 50px;
+    padding-right: 10px;
     position: relative;
+    font-size: 15px;
 }
 @media (max-width: 768px) {
     .testmonialArea .testimonialContent .testmonialSlider .slideItem p {

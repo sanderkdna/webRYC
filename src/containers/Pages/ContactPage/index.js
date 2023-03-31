@@ -34,16 +34,16 @@ const ContactPage = () => {
                     <div className="row">
                         <div className="col-lg-5">
                             <div className="contactUsInfo">
-                                <h3>Our Contacts</h3>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                <h3>Tienes más Preguntas</h3>
+                                <p>Ingresa a nuestro sistema de PQR y envianos tus inquietudes.
                                 </p>
-                                <h4>Address</h4>
-                                <span>245 King Street, Touterie Victoria 8520 Australia</span>
-                                <h4>Phone</h4>
-                                <span>0-123-456-7890</span>
-                                <span>0-123-456-7890</span>
+                                <h4>Dirección</h4>
+                                <span>Cra 35 # 46 – 112 Cabecera del llano, Bucaramanga - Santander</span>
+                                <h4>Teléfono</h4>
+                                <span>(607) 697 15 65</span>
+                                <span>Cel: 316 480 44 40</span>
                                 <h4>Email</h4>
-                                <span>sample@gmail.com</span>
+                                <span>info@rodriguezcorreaabogados.com</span>
                             </div>
                         </div>
                         <div className="col-lg-7">
@@ -58,9 +58,9 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <NewsLetter
+            {/* <NewsLetter
                 className="newsLetterArea"
-            />
+            /> */}
             <FooterArea />
         </Fragment>
     )

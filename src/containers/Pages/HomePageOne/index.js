@@ -120,17 +120,17 @@ const HomePageOne = () => {
       />
       <Portfolio
         className="portfolioArea"
-        title="Our Resent Case Studies"
-        subTitle="Here Our Best Work"
+        title="Conoce nuestro portafolio de servicios de manera detallada"
+        subTitle="Descubre porque somos la mejor opción"
         portfolioItem={portfolioItem}
       />
       <Testmonial className="testmonialArea" />
       <ContactArea className="contactArea" />
       <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
+        title="Contamos con una amplia cartera de clientes, entre ellos se encuentran:"
+        subTitle="Algunos de nuestros clientes"
         className="teamArea"
-        slider={false}
+        slider={true}
       />
       <CounterArea className="counterArea" />
       <BlogArea
@@ -139,7 +139,7 @@ const HomePageOne = () => {
         subTitle="From Our Blog
                 "
       />
-      <NewsLetter className="newsLetterArea" />
+      {/* <NewsLetter className="newsLetterArea" /> */}
       <FooterArea />
     </Fragment>
   );

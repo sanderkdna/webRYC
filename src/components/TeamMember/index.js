@@ -186,15 +186,6 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                         <div className="teamImage">
                                             <img src={team.image} alt="" />
                                         </div>
-                                            {/* <div className="teamContent">
-                                                <h3>{team.name}</h3>
-                                                <span>{team.level}</span>
-                                                <ul>
-                                                    {team.socialMedia.map(social => (
-                                                        <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
-                                                    ))}
-                                                </ul>
-                                            </div> */}
                                     </div>
                                 ))}
                             </Slider>
@@ -204,18 +195,9 @@ const TeamMember = ({ className, title, subTitle, slider, noGutters }) => {
                                 {teams.map((team, i) => (
                                     <div key={i} className="col-lg-4 col-md-6 col-12">
                                         <div className="teamWrapper">
-                                            <div className="teamImage">
+                                            <div className="teamImageFragment">
                                                 <img src={team.image} alt="" />
                                             </div>
-                                            {/* <div className="teamContent">
-                                                <h3>{team.name}</h3>
-                                                <span>{team.level}</span>
-                                                <ul>
-                                                    {team.socialMedia.map(social => (
-                                                        <li key={social}><a href="#"><i className={`fa fa-${social}`} aria-hidden="true"></i></a></li>
-                                                    ))}
-                                                </ul>
-                                            </div> */}
                                         </div>
                                     </div>
                                 ))}

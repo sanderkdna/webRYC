@@ -12,7 +12,7 @@ import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Attorneys' }
+    { name: 'Nuestros Clientes' }
 ]
 
 const TeamPage = () => {
@@ -24,15 +24,16 @@ const TeamPage = () => {
             </header>
             <Breadcumb
                 className="breadcumbArea"
-                title="Our Attorneys"
+                title="Nuestros Clientes"
                 breadcumbMenu={breadcumbMenu}
                 background={breadcumb}
             />
             <TeamMember
-                title="Qualified Attorneys "
-                subTitle="Meet Our Experts"
+                title="Contamos con una amplia cartera de clientes, entre ellos se encuentran:"
+                subTitle="Algunos de nuestros clientes"
                 className="teamArea teamAreaStyleTwo"
                 noGutters={true}
+                slider={false}
             />
             <NewsLetter
                 className="newsLetterArea"
