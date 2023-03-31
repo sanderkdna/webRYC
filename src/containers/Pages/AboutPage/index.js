@@ -11,6 +11,7 @@ import CounterArea from "../../../components/CounterArea";
 import BlogArea from "../../../components/BlogArea";
 import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
+import ContactArea from '../../../components/ContactArea'
 // images
 import about from "../../../images/about/2.jpg";
 import breadcumb from "../../../images/breadcumb/1.jpg";
@@ -50,37 +51,66 @@ const visionText = [
 const services = [
   {
     icon: "flaticon-parents",
-    title: "Family Law",
+    title: 'Recaudo de Cartera',
     content: "There are many variations of passages of Lorem ",
   },
-  {
-    icon: "flaticon-wounded",
-    title: "Personal Injury",
-    content: "There are many variations of passages of Lorem ",
-  },
+  
   {
     icon: "flaticon-employee",
-    title: "Business Law",
+    title: 'Derecho Civil',
     content: "There are many variations of passages of Lorem ",
   },
   {
     icon: "flaticon-thief",
-    title: "Criminal Law",
+    title: 'Derecho Laboral y Seguridad Social',
     content: "There are many variations of passages of Lorem ",
   },
   {
     icon: "flaticon-university-graduate-hat",
-    title: "Education Law",
+    title: 'Derecho Comercial',
     content: "There are many variations of passages of Lorem ",
   },
   {
     icon: "flaticon-house",
-    title: "Real Estate Law",
+    title: 'Reorganización Empresarial',
+    content: "There are many variations of passages of Lorem ",
+  },
+  {
+    icon: "flaticon-house",
+    title: 'Contratación Estatal y Derecho Administrativo',
+    content: "There are many variations of passages of Lorem ",
+  },
+  {
+    icon: "flaticon-house",
+    title: 'Derecho Penal',
+    content: "There are many variations of passages of Lorem ",
+  },
+  {
+    icon: "flaticon-house",
+    title: 'Derecho Disciplinario',
+    content: "There are many variations of passages of Lorem ",
+  },
+  {
+    icon: "flaticon-house",
+    title: 'Virtual Legal',
     content: "There are many variations of passages of Lorem ",
   },
 ];
 
-const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "About us" }];
+
+
+
+
+
+
+
+
+
+
+
+
+
+const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Sobre Nosotros" }];
 
 const AboutPage = () => {
   return (
@@ -91,7 +121,7 @@ const AboutPage = () => {
       </header>
       <Breadcumb
         className="breadcumbArea"
-        title="About Us"
+        title="Sobre Nosotros"
         breadcumbMenu={breadcumbMenu}
         background={breadcumb}
       />
@@ -122,28 +152,15 @@ const AboutPage = () => {
       />
       <ServiceArea
         className="ourServiceArea ourServiceAreaStyleTwo"
-        title="How Can We Help You"
-        subTitle="Area Of Practice"
+        title="En que te podemos ayudar"
+        subTitle="Conoce nuestras areas de Ejercicio"
         services={services}
       />
       <Testmonial className="testmonialArea pt100" />
-      <CounterArea
-        fullWidth={true}
-        className="counterArea counterAreaStyleTwo"
-      />
-      <TeamMember
-        title="Qualified Attorneys "
-        subTitle="Meet Our Experts"
-        className="teamArea"
-        slider={true}
-      />
-      <BlogArea
-        className="blogArea"
-        title="Latest News"
-        subTitle="From Our Blog
-                "
-      />
-      <NewsLetter className="newsLetterArea" />
+
+      <ContactArea
+                className="contactArea"
+            />
       <FooterArea />
     </Fragment>
   );

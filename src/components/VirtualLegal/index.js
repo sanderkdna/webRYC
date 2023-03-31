@@ -21,8 +21,7 @@ const VirtualLegal = () => {
             <div className="btnStyle btnStyle2">
               <a
                 href="https://coordinadordeprocesosjudiciales.com/consultapublica/registro/"
-                target={"_blank"}
-              >
+                target={"_blank"}>
                 Registrarse
               </a>
             </div>

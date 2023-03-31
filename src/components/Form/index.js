@@ -130,7 +130,6 @@ class Form extends Component {
 
         const options = [
             { level: 'Recaudo de Cartera', value: 'Recaudo de Cartera' },
-            { level: 'Insolvencias y Restituciones', value: 'Insolvencias y Restituciones' },
             { level: 'Derecho Civil', value: 'Derecho Civil' },
             { level: 'Derecho Laboral y Seguridad Social', value: 'Derecho Laboral y Seguridad Social' },
             { level: 'Derecho Comercial', value: 'Derecho Comercial' },
