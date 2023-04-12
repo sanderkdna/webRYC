@@ -22,11 +22,11 @@ const breadcumbMenu = [
     { name: 'Gime Alexander Rodriguez' }
 ]
 const teamMembarInfo = [
-    { level: 'Positon: ', text: 'Especializado en Derecho Laboral y Relaciones Industriales. Universidad externado de Colombia' },
-    { level: 'Practice Area: ', text: 'Derecho Laboral, Relaciones Industriales' },
-    { level: 'Experience: ', text: '+20 Años' },
-    { level: 'Address: ', text: 'Cra 35 # 46 – 112 Cabecera del llano' },
-    { level: 'Phone: ', text: '+57 3105547106.123.456' },
+    { level: 'Cargo: ', text: 'Especializado en Derecho Laboral y Relaciones Industriales. Universidad externado de Colombia' },
+    { level: 'Area de Ejercicio: ', text: 'Derecho Laboral, Relaciones Industriales' },
+    { level: 'Experiencia: ', text: '+20 Años' },
+    { level: 'Dirección: ', text: 'Cra 35 # 46 – 112 Cabecera del llano' },
+    { level: 'Teléfono: ', text: '+57 3105547106.123.456' },
     { level: 'Email: ', text: 'info@rodriguezcorreaabogados.com' },
 ]
 const teamContents = [

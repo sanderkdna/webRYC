@@ -12,7 +12,7 @@ import './style.css'
 
 const breadcumbMenu = [
     { name: 'Home', route: '/' },
-    { name: 'Contact', },
+    { name: 'Escríbenos', },
 ]
 
 const ContactPage = () => {
@@ -48,7 +48,7 @@ const ContactPage = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="contactUSForm">
-                                <h3>Quick Contact Form</h3>
+                                <h3>Formulario de PQR</h3>
                                 <Form
                                     addressInfo={true}
                                 />

@@ -28,7 +28,7 @@ const HeaderTop = (props) => {
                 <li>
                   <i className="fa fa-phone"></i>{" "}
                   <a href="tel:6076971565" target={"_blank"}>
-                    (607) 697 15 65
+                    (607)  6971565
                   </a>{" "}
                 </li>
                 <li><a href="https://www.facebook.com/rodriguezcorreaabogados" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>

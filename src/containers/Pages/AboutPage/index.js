@@ -13,7 +13,9 @@ import NewsLetter from "../../../components/Newsletter";
 import FooterArea from "../../../components/FooterArea";
 import ContactArea from '../../../components/ContactArea'
 // images
-import about from "../../../images/about/2.jpg";
+import about1 from "../../../images/about/DSC08765-2.jpeg";
+import about2 from "../../../images/about/DSC09085-2.jpeg";
+import about3 from "../../../images/about/DSC08574-2.jpeg";
 import breadcumb from "../../../images/breadcumb/1.jpg";
 import signature from "../../../images/about/1.png";
 
@@ -97,19 +99,6 @@ const services = [
   },
 ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const breadcumbMenu = [{ name: "Home", route: "/" }, { name: "Sobre Nosotros" }];
 
 const AboutPage = () => {
@@ -130,7 +119,7 @@ const AboutPage = () => {
         className="aboutArea aboutAreaStyleTwo"
         title="RESEÑA HISTÓRICA"
         subTitle="RODRIGUEZ & CORREA ABOGADOS S.A.S"
-        images={about}
+        images={about1}
         orderLast="order-last"
         videoId="XxVg_s8xAms"
         pragraphs={aboutText}
@@ -138,14 +127,14 @@ const AboutPage = () => {
       <About
         className="aboutArea"
         title="Misión"
-        images={about}
+        images={about2}
         signature={signature}
         pragraphs={misionText}
       />
       <About
         className="aboutArea aboutAreaStyleTwo"
         title="Visión"
-        images={about}
+        images={about3}
         orderLast="order-last"
         videoId="XxVg_s8xAms"
         pragraphs={visionText}

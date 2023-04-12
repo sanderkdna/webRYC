@@ -5,9 +5,9 @@ import './style.css'
 const footerLinks = [
     {
         title: 'BUCARAMANGA', menus: [
-            { name: 'Cra 35 # 46 – 112 Cabecera del llano', icon:'fa fa-location-arrow iconcontact' },
+            { name: 'Cra 35 # 46 - 112 Cabecera del llano', icon:'fa fa-location-arrow iconcontact' },
             { name: '(607) 697 15 65', icon:'fa fa-phone iconcontact'  },
-            { name: 'Cel: 316 480 44 40', icon:'fa fa-phone iconcontact' },
+            { name: 'Cel: 313 464 6042', icon:'fa fa-phone iconcontact' },
             { name: 'Encuentranos', route: 'https://goo.gl/maps/HwZqTJJA1pEDivpS6', icon:'fa fa-map iconcontact' },
         ]
     },
@@ -15,7 +15,7 @@ const footerLinks = [
         title: 'BOGOTA', menus: [
             { name: 'BOGOTA, DC Cl 12B # 9 – 33 Of. 408, Edificio Sabanas', icon:'fa fa-location-arrow iconcontact'  },
             { name: 'PBX: (607) 697 15 65 Ext 115', icon:'fa fa-phone iconcontact'  },
-            { name: 'Cel: 316 480 44 40', icon:'fa fa-phone iconcontact'  },
+            { name: 'Cel: 313 464 6042', icon:'fa fa-phone iconcontact'  },
             { name: 'Encuentranos', route: 'https://goo.gl/maps/yNWRwxnHMaqsSSs89', icon:'fa fa-map iconcontact' },
         ]
     },

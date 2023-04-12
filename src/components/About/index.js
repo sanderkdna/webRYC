@@ -13,12 +13,12 @@ const About = ({ subTitle, title, videoId, className, signature, pragraphs,image
                     <div className={orderLast ? `${orderLast} col col-lg-6`:'col col-lg-6'}>
                         <div className="aboutImageWrap">
                             <img src={images} alt="" />
-                            {videoId && <i onClick={() => setVideo(true)} className="fa fa-play"></i>}
+                            {/* {videoId && <i onClick={() => setVideo(true)} className="fa fa-play"></i>}
                             <ModalVideo
                                 channel='youtube'
                                 isOpen={video}
                                 videoId={videoId}
-                                onClose={() => () => setVideo(false)} />
+                                onClose={() => () => setVideo(false)} /> */}
                         </div>
                     </div>
                     <div className="col-lg-6">

@@ -1,8 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component, useRef } from 'react'
+
 import Joi from 'joi-browser'
 import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
+
 import './style.css'
 class Form extends Component {
+    
     state = {
         name: '',
         phone: '',
@@ -101,6 +105,7 @@ class Form extends Component {
     };
 
     submitHandler = event => {
+        const formx = document.getElementById('contactForm');
         event.preventDefault()
         const error = this.validate();
         if (error) {
@@ -123,6 +128,14 @@ class Form extends Component {
                 'Description' + '=' + this.state.description,
             )
             toast.success('Please check Consol log')
+
+            emailjs.sendForm('service_imt1ysb', 'template_dqa85ra', formx, 'beF_RuPmx6HxoaGP4')
+            .then((result) => {
+                toast.success('Mensaje enviado correctamente')
+            }, (error) => {
+                toast.success('Hubo un error al intentar enviar el mensaje')
+            });
+
         }
     }
 
@@ -149,7 +162,7 @@ class Form extends Component {
         ]
 
         return (
-            <form onSubmit={this.submitHandler} className='contactForm'>
+            <form onSubmit={this.submitHandler} className='contactForm' id="contactForm">
                 <div className="row">
                     <div className="col-sm-6 col-12">
                         <div className="formInput">

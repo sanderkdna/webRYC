@@ -13,8 +13,6 @@ import teamMember4 from '../../images/gallery/DSC08783-2.jpeg'
 import teamMember5 from '../../images/gallery/DSC08824-2.jpeg'
 import teamMember6 from '../../images/gallery/DSC08994-2.jpeg'
 import teamMember7 from '../../images/gallery/DSC09085-2.jpeg'
-import teamMember8 from '../../images/gallery/DSC09397-2.jpeg'
-import teamMember9 from '../../images/gallery/DSC08574-1.jpeg'
 
 const teams = [
     {
@@ -52,16 +50,7 @@ const teams = [
             'facebook', 'twitter', 'linkedin'
         ]
     },
-    {
-        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember8, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    },
-    {
-        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember9, socialMedia: [
-            'facebook', 'twitter', 'linkedin'
-        ]
-    }
+    
 ]
 
 const settings = {
