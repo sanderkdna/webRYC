@@ -23,7 +23,7 @@ const ServiceArea = ({ className, title, subTitle,services }) => {
                                 </div>
                                 <div className="serviceContent">
                                     <h3>{service.title}</h3>
-                                    <p>{service.content}</p>
+                                    {/* <p>{service.content}</p> */}
                                 </div>
                                 <div className="btnStyle text-center">
                                     <Link to={service.link}>Conoce más...</Link>

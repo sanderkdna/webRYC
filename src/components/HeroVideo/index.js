@@ -20,7 +20,7 @@ class HeroSlider extends Component {
     return (
       <Slider className={this.props.className} {...settings}>
         <div className="video-container">
-          <video src={this.props.video} controls autoPlay={true} muted={true}/>
+          <video src={this.props.video} controls={false} autoPlay={true} muted={true} loop={true} />
         </div>
       </Slider>
     );
