@@ -105,6 +105,15 @@ const HeaderBottom = (props) => {
                 </li>
               </ul>
             </div>
+            <div className="col-lg-1 col-md-2 col-sm-6 col-4">
+              <div className="searchMenuWrapper">
+                  <div onClick={responsiveHandler} className="responsiveTrigger">
+                      <span className="first"></span>
+                      <span className="second"></span>
+                      <span className="third"></span>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>

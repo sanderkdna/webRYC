@@ -43,7 +43,7 @@ const ContactPage = () => {
                                 <span>(607) 697 15 65</span>
                                 <span>Cel: 316 480 44 40</span>
                                 <h4>Email</h4>
-                                <span>info@rodriguezcorreaabogados.com</span>
+                                <span>aux.juridico@rodriguezcorreaabogados.com</span>
                             </div>
                         </div>
                         <div className="col-lg-7">

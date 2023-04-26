@@ -9,7 +9,9 @@ const listItem = [
     {title:'Politica Preventiva de Acoso Laboral V1', 'link' : 'docs/O-GD-009_Politica_no_drogas,_alcohol_y_tabaco_V3.pdf'},
     {title:'Politica no drogas, alcohol y tabaco V3', 'link' : 'docs/O-GD-010_Politica_Preventiva_de_Acoso_Laboral_V1.pdf'},
     {title:'Reglamento de Higiene y Seguridad Industrial V4', 'link' : 'docs/O-GD-011_Política_de_desconexión_laboral_V0.pdf'},
-    {title:'Política de desconexión laboral V0', 'link' : 'docs/O-HS-003_Reglamento_de_Higiene_y_Seguridad_Industrial_V4.pdf'}
+    {title:'Política de desconexión laboral V0', 'link' : 'docs/O-HS-003_Reglamento_de_Higiene_y_Seguridad_Industrial_V4.pdf'},
+    {title:'Política de Seguridad y Privacidad de la Información', 'link' : 'docs/POLITICAS-DE-SEGURIDAD-Y-PRIVACIDAD-DE-LA-INFORMACION-RODRIGUEZ-CORREA-ABOGADOS-2023.pdf'}
+
 ]
 
 const SingleContentArea = ({ className, avatar, image }) => {
@@ -29,6 +31,7 @@ const SingleContentArea = ({ className, avatar, image }) => {
                                 <ul>
                                     {listItem.map(list => (
                                         <li key={list.title}>
+
                                             <a href={list.link} target="_blank">
                                                 {list.title}
                                             </a>

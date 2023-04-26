@@ -26,7 +26,7 @@ const ServiceArea = ({ className, title, subTitle,services }) => {
                                     {/* <p>{service.content}</p> */}
                                 </div>
                                 <div className="btnStyle text-center">
-                                    <Link to={service.link}>Conoce más...</Link>
+                                    <Link to={{ pathname: service.link}} target="_blank" >Conoce más...</Link>
                                 </div>
                             </div>
                         </div>
