@@ -100,7 +100,7 @@ const HeaderBottom = (props) => {
                 </li>
                 <li>
                   <NavLink exact to="/contact">
-                  PQR
+                  PQRF
                   </NavLink>
                 </li>
               </ul>

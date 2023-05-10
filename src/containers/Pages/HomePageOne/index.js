@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+import CookieConsent from "react-cookie-consent";
+
 import HeaderBotton from "../../../components/HeaderBottom";
 import HeaderTop from "../../../components/HeaderTop";
 import HeroSlider from "../../../components/HeroSlider";
@@ -89,55 +91,68 @@ const portfolioItem = [
 
 const HomePageOne = () => {
   return (
-    <Fragment>
-      <header className="headerArea">
-        <HeaderTop className="headerTop" />
-        <HeaderBotton className="headerBottomArea" />
-      </header>
-      {/* <HeroSlider 
-                sliders={heroSliders}
-                className="heroSliderArea" /> */}
-      <HeroVideo video={"/videos/corporativo.mp4"} className="heroSliderArea" />
-      <Service className="serviceArea" />
-      <VirtualLegal />
-      <Locations />
-      <About
-        className="aboutArea"
-        title="Sobre Nosotros"
-        images={about}
-        signature={signature}
-        pragraphs={aboutText}
-      />
-      <ServiceArea
-        className="ourServiceArea"
-        title="Visualiza nuestros Portafolios de Servicios"
-        subTitle="Somos Especialistass"
-        services={services}
-      />
-      <Portfolio
-        className="portfolioArea"
-        title="Conoce nuestro portafolio de servicios de manera detallada"
-        subTitle="Descubre porque somos la mejor opción"
-        portfolioItem={portfolioItem}
-      />
-      <Testmonial className="testmonialArea" />
-      <ContactArea className="contactArea" />
-      <TeamMember
-        title="Contamos con una amplia cartera de clientes, entre ellos se encuentran:"
-        subTitle="Algunos de nuestros clientes"
-        className="teamArea"
-        slider={true}
-      />
-      <CounterArea className="counterArea" />
-      {/* <BlogArea
-        className="blogArea"
-        title="Latest News"
-        subTitle="From Our Blog
-                "
-      /> */}
-      {/* <NewsLetter className="newsLetterArea" /> */}
-      <FooterArea />
-    </Fragment>
+    <>
+      <Fragment>
+        <header className="headerArea">
+          <HeaderTop className="headerTop" />
+          <HeaderBotton className="headerBottomArea" />
+        </header>
+        {/* <HeroSlider 
+                  sliders={heroSliders}
+                  className="heroSliderArea" /> */}
+        <HeroVideo video={"/videos/corporativo.mp4"} className="heroSliderArea" />
+        <Service className="serviceArea" />
+        <VirtualLegal />
+        <Locations />
+        <About
+          className="aboutArea"
+          title="Sobre Nosotros"
+          images={about}
+          signature={signature}
+          pragraphs={aboutText}
+        />
+        <ServiceArea
+          className="ourServiceArea"
+          title="Visualiza nuestros Portafolios de Servicios"
+          subTitle="Somos Especialistass"
+          services={services}
+        />
+        <Portfolio
+          className="portfolioArea"
+          title="Conoce nuestro portafolio de servicios de manera detallada"
+          subTitle="Descubre porque somos la mejor opción"
+          portfolioItem={portfolioItem}
+        />
+        <Testmonial className="testmonialArea" />
+        <ContactArea className="contactArea" />
+        <TeamMember
+          title="Contamos con una amplia cartera de clientes, entre ellos se encuentran:"
+          subTitle="Algunos de nuestros clientes"
+          className="teamArea"
+          slider={true}
+        />
+        <CounterArea className="counterArea" />
+        {/* <BlogArea
+          className="blogArea"
+          title="Latest News"
+          subTitle="From Our Blog
+                  "
+        /> */}
+        {/* <NewsLetter className="newsLetterArea" /> */}
+        <FooterArea />
+      </Fragment>
+      <CookieConsent
+          location="top"
+          buttonText="Acepto"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: "#C0B495", width: "50%", fontSize: "14px", color: "#FFFFFF", marginTop: "15%", marginLeft: "25%" }}
+          buttonStyle={{ color: "#FFFFFF", fontSize: "16px", background:'#272C3F' }}
+          expires={150}
+        >
+          This website uses cookies to enhance the user experience.{" "}
+          <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+      </CookieConsent>
+    </>
   );
 };
 export default HomePageOne;

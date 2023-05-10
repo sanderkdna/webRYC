@@ -11,6 +11,7 @@
     "fsevents": "^2.3.2",
     "joi-browser": "^13.4.0",
     "react": "^16.8.6",
+    "react-cookie-consent": "^8.0.1",
     "react-dom": "^16.8.6",
     "react-modal-video": "^1.2.2",
     "react-odometerjs": "^2.1.1",
