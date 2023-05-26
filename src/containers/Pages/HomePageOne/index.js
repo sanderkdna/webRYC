@@ -82,11 +82,11 @@ const services = [
 ];
 
 const portfolioItem = [
-  { images: portfolio1, title: "Recaudo de Cartera", subtitle: "Corporativo" },
-    { images: portfolio2, title: "Virtual Legal", subtitle: "General" },
-    { images: portfolio3, title: "Asesoría Legal para Empresas", subtitle: "Negocios" },
-    { images: portfolio4, title: "Derecho Comercial", subtitle: "Ayudas Empresariales" },
-    { images: portfolio5, title: "Cuentas de Negocios", subtitle: "Problemas de Familia"},
+  { images: portfolio1, title: "Recaudo de Cartera", subtitle: "" },
+    { images: portfolio2, title: "Virtual Legal", subtitle: "" },
+    { images: portfolio3, title: "Asesoría Legal para Empresas", subtitle: "" },
+    { images: portfolio4, title: "Derecho Comercial", subtitle: "" },
+    { images: portfolio5, title: "Insolvencia y reorganización empresarial", subtitle: ""},
 ];
 
 const HomePageOne = () => {
@@ -141,7 +141,7 @@ const HomePageOne = () => {
         {/* <NewsLetter className="newsLetterArea" /> */}
         <FooterArea />
       </Fragment>
-      <CookieConsent
+      {/* <CookieConsent
           location="top"
           buttonText="Acepto"
           cookieName="myAwesomeCookieName2"
@@ -151,7 +151,7 @@ const HomePageOne = () => {
         >
           This website uses cookies to enhance the user experience.{" "}
           <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   );
 };

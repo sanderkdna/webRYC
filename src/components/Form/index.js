@@ -13,6 +13,7 @@ class Form extends Component {
         email: '',
         address: '',
         description: '',
+        terms: false,
         error: {}
     }
 
@@ -21,10 +22,10 @@ class Form extends Component {
             errors.forEach(err => {
                 switch (err.type) {
                     case "string.email":
-                        err.message = 'email mast be A Valid Email';
+                        err.message = 'Debes ingresar una direccion de correo valida';
                         break;
                     default:
-                        err.message = 'email can not be empity';
+                        err.message = 'La dirección de correo electrónico es obligatoria';
                         break;
                 }
             });
@@ -34,7 +35,7 @@ class Form extends Component {
             errors.forEach(err => {
                 switch (err.type) {
                     default:
-                        err.message = 'phone can not be Empity';
+                        err.message = 'El número de teléfono es obligatorio';
                         break;
                 }
             });
@@ -44,7 +45,7 @@ class Form extends Component {
             errors.forEach(err => {
                 switch (err.type) {
                     default:
-                        err.message = 'name can not be Empity';
+                        err.message = 'El nombre es obligatorio';
                         break;
                 }
             });
@@ -54,7 +55,17 @@ class Form extends Component {
             errors.forEach(err => {
                 switch (err.type) {
                     default:
-                        err.message = 'description can not be Empity';
+                        err.message = 'La descripción es obligatoria';
+                        break;
+                }
+            });
+            return errors;
+        }),
+        terms: Joi.string().required().error(errors => {
+            errors.forEach(err => {
+                switch (err.type) {
+                    default:
+                        err.message = 'Debes Aceptar los términos y condiciones';
                         break;
                 }
             });
@@ -95,6 +106,7 @@ class Form extends Component {
             email: this.state.email,
             phone: this.state.phone,
             description: this.state.description,
+            terms: this.state.terms,
         }
         const { error } = Joi.validate(form, this.schema, options)
         if (!error) return null;
@@ -119,6 +131,7 @@ class Form extends Component {
                 email: '',
                 address: '',
                 description: '',
+                terms: false,
             })
             console.log(
                 'Name' + '=' + this.state.name,
@@ -126,6 +139,7 @@ class Form extends Component {
                 'Email' + '=' + this.state.email,
                 'Address' + '=' + this.state.address,
                 'Description' + '=' + this.state.description,
+                'Terms' + '=' + this.state.terms,
             )
             toast.success('Please check Consol log')
 
@@ -160,6 +174,8 @@ class Form extends Component {
             { level: 'Felicitaciones', value: 'Felicitaciones' },
 
         ]
+
+        const stylecolor = this.props.addressInfo ? {color:'#000'}  : {color:'#FFF'};
 
         return (
             <form onSubmit={this.submitHandler} className='contactForm' id="contactForm">
@@ -250,8 +266,26 @@ class Form extends Component {
                             {this.state.error.description && <p>{this.state.error.description}</p>}
                         </div>
                     </div>
+                    <div className='col-md-12'>
+                        <p style={ stylecolor }>
+                        Autorizo a RODRIGUEZ & CORREA ABOGADOS SAS identificada con NIT 900.265.868-8 con domicilio principal en la Carrera 35 No. 46 – 112 Cabecera del Llano de Bucaramanga, para que de manera voluntaria e informada realice tratamiento de la información personal con la única finalidad de recibir una respuesta oportuna frente a las solicitudes realizadas, tales como peticiones, quejas, reclamos o solicitudes de servicios. Infórmanos que sus datos únicamente serán tratados conforme a la finalidad autorizada, agradecemos el diligenciamiento de su información para brindarle una respuesta óptima a su solicitud. Consulte nuestra política de tratamiento de datos solicitados a través del correo electrónico aux.juridico@rodriguezcorreaabogados.com.
+                        </p>
+                            <div className='row' style={{marginTop:'20px'}}>
+                                <div className='col-md-2'>
+                                    <div className="formInput">
+                                        <input  type = "checkbox"   name = "terms"   id = "terms" className='form-control'  value={this.state.terms}  onChange = { this.changeHandler }   /> 
+                                    </div>
+                                </div>               
+                                <div className='col-md-10'  style={{paddingTop:'12px', fontSize:'18px'}}>
+                                    <label for = "terms"  style={ stylecolor }> 
+                                        ACEPTO LOS TÉRMINOS Y CONDICIONES
+                                        {this.state.error.terms && <p>{this.state.error.terms}</p>}
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
                     <div className="col-12">
-                        <button type="submit">Envíar</button>
+                        <button type="submit">Envíar Mensaje</button>
                     </div>
                 </div>
             </form>
