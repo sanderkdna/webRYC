@@ -1,6 +1,6 @@
 .counterArea {
     padding: 100px 0px;
-    background: url(../../images/counter/DSC08994-2.jpeg) center center/cover no-repeat local;
+    background: url(../../images/counter/DSC08994-2.jpeg) top center/cover no-repeat local;
 }
 .counterArea .counterMainWrapper {
     display: flex;

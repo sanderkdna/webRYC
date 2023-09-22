@@ -22,12 +22,12 @@ const breadcumbMenu = [
     { name: 'Gime Alexander Rodriguez' }
 ]
 const teamMembarInfo = [
-    { level: 'Cargo: ', text: 'Especializado en Derecho Laboral y Relaciones Industriales. Universidad externado de Colombia' },
-    { level: 'Area de Ejercicio: ', text: 'Derecho Laboral, Relaciones Industriales' },
+    { level: 'Cargo: ', text: 'Gerente - Representante legal' },
+    { level: 'Area de Ejercicio: ', text: 'Recaudo de Cartera, Virtual Legal, Asesoría Jurídica Empresarial, Derecho Civil, Derecho Disciplinario, Insolvencia y Reorganización Empresarial, Derecho de Familia, Derecho Comercial, Derecho Penal, Derecho Laboral y Seguridad Social, Contratación Estatal y Derecho Administrativo' },
     { level: 'Experiencia: ', text: '+20 Años' },
     { level: 'Dirección: ', text: 'Cra 35 # 46 – 112 Cabecera del llano' },
-    { level: 'Teléfono: ', text: '+57 3105547106.123.456' },
-    { level: 'Email: ', text: 'info@rodriguezcorreaabogados.com' },
+    { level: 'Teléfono: ', text: '(607) 6971565' },
+    { level: 'Email: ', text: 'gerencia@rodriguezcorreaabogados.com' },
 ]
 const teamContents = [
     'DERECHO LABORAL y RELACIONES INDUSTRIALES DE LA UNIVERSIDAD EXTERNADO DE COLOMBIA.',
@@ -78,8 +78,8 @@ const SingleTeamPage = () => {
                                             ))}
                                         </ul>
                                         <ul className="socialShare">
-                                            <li><a href="https://www.facebook.com/rodriguezgime"><i className="fa fa-facebook"></i></a></li>
-                                            <li><a href="https://www.instagram.com/rodriguezgimeabogado/?utm_medium=copy_link"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a target='_blank' href="https://www.facebook.com/rodriguezgime"><i className="fa fa-facebook"></i></a></li>
+                                            <li><a target='_blank' href="https://www.instagram.com/rodriguezgimeabogado/?utm_medium=copy_link"><i className="fa fa-instagram"></i></a></li>
                                             
                                         </ul>
                                     </div>

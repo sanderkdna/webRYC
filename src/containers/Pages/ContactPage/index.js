@@ -41,14 +41,14 @@ const ContactPage = () => {
                                 <span>Cra 35 # 46 – 112 Cabecera del llano, Bucaramanga - Santander</span>
                                 <h4>Teléfono</h4>
                                 <span>(607) 697 15 65</span>
-                                <span>Cel: 316 480 44 40</span>
+                                <span>Cel: 313 464 60 42</span>
                                 <h4>Email</h4>
                                 <span>aux.juridico@rodriguezcorreaabogados.com</span>
                             </div>
                         </div>
                         <div className="col-lg-7">
                             <div className="contactUSForm">
-                                <h3>Formulario de PQR</h3>
+                                <h3>Formulario de PQRF</h3>
                                 <Form
                                     addressInfo={true}
                                 />
