@@ -17,7 +17,7 @@ const HeaderTop = (props) => {
                       <i className="fa fa-globe"></i>{" "}
                     </span>
                     <span class="elementor-icon-list-text">
-                      Coordinador de Procesos{" "}
+                      Coordinador de Procesos.com{" "}
                     </span>
                   </a>
                 </li>
