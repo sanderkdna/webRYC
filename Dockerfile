@@ -13,6 +13,9 @@ RUN npm install --frozen-lockfile
 # Copy the app's source code to the container
 COPY . .
 
+# Configure the Node.js environment to use the OpenSSL legacy provider
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # Build the React app
 RUN npm run build
 
