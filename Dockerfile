@@ -1,23 +1,23 @@
-FROM node:18-bullseye-slim as builder
+# Use Node.js as the base image
+FROM node:18.15.0-alpine
 
+# Set the working directory in the container
 WORKDIR /app
 
-ENV NODE_ENV production
+# Copy package.json and yarn.lock to the container
+COPY package.json yarn.lock ./
 
-RUN apt-get update && apt-get install -y openssl
+# Install dependencies
+RUN yarn install --frozen-lockfile
 
-COPY package*.json ./
+# Install dependencies
+RUN yarn install
 
-COPY . /app
+# Copy the app's source code to the container
+COPY . .
 
-RUN npm install --dev --legacy-peer-deps && npm run build
+# Build the React app
+RUN yarn build
 
-# Check build output
-RUN ls -la /app/build
-
-FROM caddy:2.6.4-alpine
-COPY Caddyfile /etc/caddy/Caddyfile
-COPY --from=builder /app/build /srv
-COPY --from=builder /app/build /var/www/html
-
-RUN caddy fmt --overwrite /etc/caddy/Caddyfile
+# Serve the build
+CMD ["npx", "serve", "-s", "build"]
