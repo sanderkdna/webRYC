@@ -26,6 +26,7 @@ import teamMember17 from '../../images/expert/17.png'
 import teamMember18 from '../../images/expert/18.png'
 import teamMember19 from '../../images/expert/19.png'
 import teamMember20 from '../../images/expert/20.png'
+import teamMember21 from '../../images/expert/21.png'
 
 
 const teams = [
@@ -126,6 +127,11 @@ const teams = [
     },
     {
         name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember20, socialMedia: [
+            'facebook', 'twitter', 'linkedin'
+        ]
+    },
+    {
+        name: 'Darcy Alec', level: 'Criminal Lawyer', image: teamMember21, socialMedia: [
             'facebook', 'twitter', 'linkedin'
         ]
     },

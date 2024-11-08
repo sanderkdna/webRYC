@@ -21,7 +21,7 @@ const footerLinks = [
     },
     {
         title: 'BARRANQUILLA', menus: [
-            { name: 'Calle 102 # 49 E-89 Edificio SOHO, Piso 12, Apto 1204B', icon:'fa fa-location-arrow iconcontact'  },
+            { name: 'CRA 49C # 100-211 CS 1 CONJUNTO VILLA VALENTINA', icon:'fa fa-location-arrow iconcontact'  },
             { name: 'Tel: (605) 3 35 81 29', icon:'fa fa-phone iconcontact'  },
             { name: 'PBX (7) 697 15 65 Ext 122', icon:'fa fa-phone iconcontact'  },
             { name: 'Cel 312 530 46 50', icon:'fa fa-phone iconcontact'  },
@@ -35,6 +35,15 @@ const footerLinks = [
             { name: 'PBX: 697 15 65 Ext 119 – 120', icon:'fa fa-phone iconcontact'  },
             { name: 'Cel: 311 440 3435', icon:'fa fa-phone iconcontact'  },
             { name: 'Encuentranos', route: 'https://goo.gl/maps/Jh7E2biGD2uHS6WZ9', icon:'fa fa-map iconcontact' },
+        ]
+    },
+    {
+        title: 'CUCUTA', menus: [
+            { name: 'CC GRAN BULEVAR OFICINA S-11 BARRIO LA PLAYA', icon:'fa fa-location-arrow iconcontact'  },
+            // { name: 'Tel: (608) 741 04 84', icon:'fa fa-phone iconcontact'  },
+            // { name: 'PBX: 697 15 65 Ext 119 – 120', icon:'fa fa-phone iconcontact'  },
+            // { name: 'Cel: 311 440 3435', icon:'fa fa-phone iconcontact'  },
+            { name: 'Encuentranos', route: 'https://maps.app.goo.gl/2w6PgwE7tPo9GroW9', icon:'fa fa-map iconcontact' },
         ]
     },
 ]
@@ -90,7 +99,7 @@ const FooterArea = () => {
                 </div>
             </div>
             <div class="wp-content">
-                <a href="https://web.whatsapp.com/send?phone=573112968532&text=Buenos%20d%C3%ADas%20se%C3%B1ores%20Virtual%20Legal%2C%20el%20d%C3%ADa%20de%20hoy%20tengo%20la%20siguiente%20consulta%3A" target="_blank" class="wp-link fa fa-whatsapp"></a>
+                <a href="https://web.whatsapp.com/send?phone=573134646042&text=Buenos%20d%C3%ADas%20se%C3%B1ores%20Virtual%20Legal%2C%20el%20d%C3%ADa%20de%20hoy%20tengo%20la%20siguiente%20consulta%3A" target="_blank" class="wp-link fa fa-whatsapp"></a>
             </div>
         </footer>
     )
