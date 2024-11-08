@@ -1,7 +1,9 @@
 name: Deploy to Cloud Run
 
 env:
-  SERVICE_NAME: react-app
+  SERVICE_NAME: rodriguez-correa-app
+  PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  REGION: us-east1
 
 on:
   push:
